@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +14,15 @@
     <link rel="icon" type="image/png" href="images/bateria.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
-    
+
 </head>
+
 <body>
 
     <h1>Alura Midi</h1>
 
     <section class="teclado">
+        <!--ion al momento de dar un clic en nuestro elemento, aun asi, esta es una mala practica dado que las funcionalidades se deben de generar en un archivo js-->
         <button class="tecla tecla_pom">Pom</button>
         <button class="tecla tecla_clap">Clap</button>
         <button class="tecla tecla_tim">Tim</button>
@@ -42,7 +45,10 @@
     <audio src="sounds/keyz.wav" id="sonido_tecla_psh"></audio>
     <audio src="sounds/keyx.wav" id="sonido_tecla_tic"></audio>
     <audio src="sounds/keyc.wav" id="sonido_tecla_tom"></audio>
-    
-    
+
+    <!-- Llamamos a nuestro archivo js en la parte del head, solo se puede hacer por medio de un script, src = source(recurso)  -->
+    <script src="main.js"></script>
+    <!-- Aqui es el lugar correcto de colocar el llamado de nuestro archivo js -->
 </body>
+
 </html>
